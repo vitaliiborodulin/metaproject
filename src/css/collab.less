@@ -1,0 +1,36 @@
+.collab {
+	padding-bottom: 411px;
+
+	.section-text {
+		margin-bottom: 45px;
+		.md(margin-bottom, 40px);
+	}
+
+	&-img-1 {
+		position: absolute;
+		top: 70px;
+		right: 0;
+		z-index: -1;
+
+		.md-block({
+			width: 360px;
+			height: 360px;
+			top: 254px;
+			right: -180px;
+		});
+	}
+
+	&-img-2 {
+		position: absolute;
+		top: 102%;
+		right: 0;
+
+		.md-block({
+			width: 526px;
+			height: 220px;
+			transform: scale(-1, 1);
+			right: unset;
+			left: -250px;
+		});
+	}
+}

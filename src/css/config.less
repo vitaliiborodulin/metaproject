@@ -1,0 +1,120 @@
+// USER VARIABLES SECTION
+// @accent: #D37321;
+@red: #D82776;
+@yellow: #EFC807;
+@white: #ffffff;
+@black: #000021;
+
+@fontsize: 16px; // Body Font Size
+
+@userfont: 'Gilroy', sans-serif;
+@systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+.reset();
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+// .debugGrid{
+// 	.debug(rgba(0, 0, 0, 0.3), 1px #ff0 solid);
+// }
+
+.container {
+	.wrapper();
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Regular.eot');
+	src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Gilroy-Regular.woff') format('woff'),
+	url('../fonts/Gilroy-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Medium.eot');
+	src: url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Gilroy-Medium.woff') format('woff'),
+	url('../fonts/Gilroy-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bricks';
+	src: url('../fonts/Bricks.eot');
+	src: url('../fonts/Bricks.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Bricks.woff') format('woff'),
+	url('../fonts/Bricks.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+html, body {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: @userfont;
+	font-size: @fontsize;
+	font-weight: 400;
+	color: @white;
+	background: #020025 url(../img/bg.jpg) no-repeat bottom center/cover;
+	text-rendering: optimizeSpeed;
+	position: relative;
+}
+
+.container {
+	position: relative;
+}
+
+.section-title {
+	margin-bottom: 70px;
+	font-family: 'Bricks';
+	font-weight: 400;
+	font-size: 46px;
+	line-height: 53px;
+	text-transform: uppercase;
+
+	.md-block({
+		margin-bottom: 40px;
+		font-size: 32px;
+		line-height: 37px;
+	});
+}
+
+.section-text {
+	max-width: 50%;
+	font-size: 20px;
+	line-height: 22px;
+
+	.md-block({
+		max-width: 100%;
+		font-size: 16px;
+	});
+
+	p+p {
+		margin-top: 6px;
+	}
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+// Remove all mouse-triggered focus styles without breaking keyboard accessibility
+*:focus:not(:focus-visible) {
+	outline: none !important;
+}

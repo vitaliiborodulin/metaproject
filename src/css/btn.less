@@ -1,0 +1,29 @@
+.btn {
+	display: inline-block;
+	padding: 20px 40px;
+
+	font-size: 24px;
+	font-weight: 500;
+
+	color: @white;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 8px;
+
+	.md-block({
+		font-size: 16px;
+	});
+}
+
+.btn-yellow {
+	background-color: @yellow;
+
+	&:hover {
+		background-color: #FFDB26;
+		text-shadow: 0px 0px 1px #E4A416;
+	}
+
+	&:active {
+		background-color: #F0BB00;
+	}
+}
