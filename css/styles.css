@@ -356,6 +356,13 @@ input[type='submit'] {
   height: 370px;
   border-radius: 15px;
   background: linear-gradient(360deg, rgba(0, 0, 0, 0.9) 5.73%, rgba(0, 0, 0, 0) 44.27%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.directions__img:hover {
+  -webkit-transform: translateY(-5px) scale(1.02);
+          transform: translateY(-5px) scale(1.02);
 }
 
 .directions__img img {
