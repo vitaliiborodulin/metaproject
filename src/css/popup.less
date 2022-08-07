@@ -1,0 +1,56 @@
+.popup {
+	max-width: 334px;
+	padding: 20px;
+
+	color: @white;
+	background-color: @violet;
+
+	border-radius: 15px;
+
+	&__title {
+		margin-bottom: 20px;
+		width: 90%;
+		font-size: 18px;
+		line-height: 21px;
+	}
+
+	&__text {
+		margin-bottom: 20px;
+		font-size: 16px;
+
+		p+p {
+			margin-top: 6px;
+		}
+	}
+
+	&__image {
+		width: 100%;
+		height: 165px;
+		margin-bottom: 20px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 15px;
+		}
+	}
+
+	.btn {
+		font-size: 16px;
+	}
+
+	.directions__popup, .directions__show {
+		display: none;
+		.sm(display, block);
+	}
+}
+
+.fancybox__content>.carousel__button.is-close {
+	top: 18px;
+	right: 12px;
+}
+
+.carousel__button svg {
+	stroke: @yellow;
+	stroke-width: 5px;
+}

@@ -1,0 +1,132 @@
+.case {
+	padding-bottom: 92px;
+
+	&__slider {
+		margin-bottom: 55px;
+		width: 60%;
+		.lg(width, 95%);
+	}
+
+	&__slide {
+		// max-width: 730px;
+		padding: 60px 60px 56px;
+		background: #63148C;
+		border-radius: 15px;
+
+		.md-block({
+			padding: 20px;
+		});
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 42px;
+		text-transform: uppercase;
+		text-align: center;
+
+		.md-block({
+			margin-bottom: 20px;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 19px;
+		});
+	}
+
+	&__descr {
+		.row-flex();
+	}
+
+	&__text {
+		.col();
+		.size(7);
+		.size-sm(12);
+
+		.md-block({
+			font-size: 16px;
+			line-height: 19px;
+		});
+
+		p+p {
+			margin-top: 6px;
+		}
+	}
+
+	&__img {
+		.col();
+		.size(5);
+		.size-sm(12);
+		border-radius: 29px;
+
+		.md(text-align, center);
+
+		.sm-block({
+			order: -1;
+			margin-bottom: 30px;
+		});
+
+		img {
+			// box-shadow: 0px 0px 13.9339px 9.83571px #B844EF, inset 0px 0px 14.7536px 6.55714px rgba(0, 0, 0, 0.25);
+			// filter: drop-shadow(0px 0px 5.7375px #F0D1FF);
+			border-radius: 29px;
+			.md(max-height, 278px);
+		}
+	}
+
+	.swiper-slide-active {
+		background: #B232A9;
+		box-shadow: 0px 4px 51px 43px rgba(0, 0, 0, 0.25);
+
+		.case__img img {
+			border: 3px solid #FFADF2;
+			box-shadow: 0px 0px 17px 12px #EF44D4, inset 0px 0px 18px 8px rgba(0, 0, 0, 0.25);
+			filter: drop-shadow(0px 0px 7px #FFD1F8);
+		}
+	}
+
+	&__all {
+		display: block;
+		font-size: 14px;
+		color: @white;
+		text-transform: uppercase;
+		.sm(text-align, right);
+	}
+
+	&-button-prev, &-button-next {
+		position: absolute;
+		right: 0;
+		top: 105%;
+		z-index: 2;
+		cursor: pointer;
+		.sm(display, none);
+	}
+
+	&-button-prev {
+		right: 10%;
+	}
+}
+
+.swiper-button-disabled {
+	opacity: 0.5;
+}
+
+.case-pagination {
+	display: none;
+	position: absolute;
+	bottom: -30px!important;
+	text-align: center;
+	.sm(display, block);
+}
+
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	background-color: #34C8CB;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	transform: scale(1.1);
+	background-color: #26FFF0;
+}

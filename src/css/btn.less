@@ -1,6 +1,6 @@
 .btn {
 	display: inline-block;
-	padding: 20px 40px;
+	padding: 20px 25px;
 
 	font-size: 24px;
 	font-weight: 500;
@@ -8,7 +8,9 @@
 	color: @white;
 	text-decoration: none;
 	text-align: center;
+	border: none;
 	border-radius: 8px;
+	cursor: pointer;
 
 	.md-block({
 		font-size: 16px;
@@ -25,5 +27,29 @@
 
 	&:active {
 		background-color: #F0BB00;
+	}
+}
+
+.btn-red {
+	background-color: @red;
+
+	&:hover {
+		background-color: #EC3B8A;
+	}
+
+	&:active {
+		background-color: #C41362;
+	}
+}
+
+.btn-green {
+	background-color: @green;
+
+	&:hover {
+		background-color: #26FFF0;
+	}
+
+	&:active {
+		background-color: #0BD1C3;
 	}
 }

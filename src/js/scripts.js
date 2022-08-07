@@ -1,7 +1,7 @@
 $(function() {
 
-	if ($(window).width() > 767){
-		new WOW().init();
-	}
+	//= components/animation.js
+	//= components/menu.js
+	//= components/slider.js
 
 });

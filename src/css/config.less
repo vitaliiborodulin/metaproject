@@ -2,7 +2,9 @@
 // @accent: #D37321;
 @red: #D82776;
 @yellow: #EFC807;
+@green: #1FE5D7;
 @white: #ffffff;
+@violet: #453B8E;
 @black: #000021;
 
 @fontsize: 16px; // Body Font Size
@@ -89,19 +91,51 @@ body {
 	});
 }
 
-.section-text {
+.section-wrapper {
 	max-width: 50%;
+	.md(max-width, 100%);
+}
+
+.section-text {
+	// max-width: 50%;
+	margin-bottom: 45px;
 	font-size: 20px;
 	line-height: 22px;
 
 	.md-block({
+		margin-bottom: 40px;
 		max-width: 100%;
 		font-size: 16px;
 	});
 
+	h3 {
+		margin-bottom: 7px;
+		font-size: 46px;
+		font-weight: 500;
+		line-height: 45px;
+		text-transform: uppercase;
+
+		.md-block({
+			font-size: 16px;
+			line-height: 23px;
+		});
+	}
+
 	p+p {
 		margin-top: 6px;
 	}
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+textarea {
+	resize: none;
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
@@ -117,4 +151,11 @@ body {
 // Remove all mouse-triggered focus styles without breaking keyboard accessibility
 *:focus:not(:focus-visible) {
 	outline: none !important;
+}
+
+// fix safari
+input[type='submit'] { 
+	-webkit-appearance: none; 
+	-moz-appearance: none; 
+	appearance: none; 
 }
