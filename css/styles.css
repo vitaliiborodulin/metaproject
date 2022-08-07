@@ -438,6 +438,17 @@ input[type='submit'] {
   color: #EFC807;
 }
 
+.header__menu.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.header__menu.open a {
+  padding: 20px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
 .header__burger {
   display: none;
   z-index: 13;
@@ -523,8 +534,9 @@ input[type='submit'] {
 }
 
 .hero__content {
+  padding-top: 128px;
+  padding-bottom: 147px;
   position: relative;
-  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -542,7 +554,6 @@ input[type='submit'] {
 
 .hero__slogan span {
   margin-top: 50px;
-  white-space: nowrap;
 }
 
 .hero__title {
@@ -559,6 +570,10 @@ input[type='submit'] {
 .hero .btn {
   -webkit-animation: pulse-yellow 2s infinite;
           animation: pulse-yellow 2s infinite;
+}
+
+.hero-img-1 {
+  max-width: 500px;
 }
 
 .hero-img-2 {
@@ -969,7 +984,27 @@ input[type='submit'] {
   }
 
   .header__menu {
+    text-align: center;
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
     display: none;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 12;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #0A032B;
+    border-radius: 0px 0px 15px 15px;
   }
 
   .header__burger {
@@ -977,16 +1012,56 @@ input[type='submit'] {
     display: flex;
   }
 
+  .hero {
+    background: url(../img/hero-bg-mob.svg) no-repeat center top / 100%;
+  }
+
+  .hero__content {
+    padding-top: 70px;
+  }
+
+  .hero__slogan {
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .hero__slogan-right {
+    order: 2;
+  }
+
+  .hero__slogan-left {
+    order: 1;
+  }
+
+  .hero__slogan span {
+    margin-top: 0;
+  }
+
   .hero__title {
     max-width: 100%;
     margin-bottom: 40px;
-    font-size: 32px;
-    line-height: 37px;
+    font-size: 30px;
+    line-height: 35px;
   }
 
   .hero-img-1 {
+    margin-top: 20px;
     width: 192px;
     height: 118px;
+    order: 3;
+  }
+
+  .hero-img-2 {
+    display: none;
+  }
+
+  .hero-img-3 {
+    display: none;
+  }
+
+  .hero-img-4 {
+    display: none;
   }
 
   .meta .section-text p,
