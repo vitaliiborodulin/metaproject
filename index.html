@@ -13,12 +13,54 @@
 
 <body class="home">
 
+	<!-- header -->
+	<header class="header">
+		<div class="container">
+			<div class="header__content">
+	
+				<div class="header__logo">
+					<img src="img/header-logo.svg" alt="" width="188" height="46">
+				</div>
+	
+				<ul class="header__menu">
+					<li><a href="#meta">О вселенной Roblox</a></li>
+					<li><a href="#case">Наши работы</a></li>
+					<li><a href="#directions">Направления</a></li>
+					<li><a href="#about">О нас</a></li>
+				</ul>
+	
+				<a class="btn btn-red" href="javascript:;" data-fancybox data-src="#order-popup">Заказать проект</a>
+	
+				<div class="header__burger"><span></span></div>
+	
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+
 	<!-- hero -->
-	<!-- //= html/hero.html -->
+	<section class="hero">
+		<div class="container">
+			<div class="hero__content">
+				<div class="hero__slogan">
+					<span class="hero__slogan-left">Откройте новую платформу</span>
+					<img class="hero-img-1 zoomIn wow" data-wow-delay="1s" src="img/hero-planet.svg" alt="" width="540" height="330">
+					<span class="hero__slogan-right">для развития и коммуникации</span>
+				</div>
+				<img class="hero-img-2 fadeIn wow" data-wow-delay="0.2s" data-wow-iteration="infinite" data-wow-duration="2s" src="img/hero-left-stars.svg" alt="" width="169" height="343">
+				<img class="hero-img-3 fadeIn wow" data-wow-delay="0.8s" data-wow-iteration="infinite" data-wow-duration="3s" src="img/hero-center-stars.svg" alt="" width="296" height="46">
+				<img class="hero-img-4 fadeIn wow" data-wow-delay="1.2s" data-wow-iteration="infinite" data-wow-duration="1.5s" src="img/hero-right-stars.svg" alt="" width="276" height="341">
+				<h1 class="hero__title">Создаем миры в метавселенных</h1>
+				<a class="btn btn-yellow" href="javascript:;" data-fancybox data-src="#order-popup">Заказать проект</a>
+	
+			</div>
+			
+		</div>
+	</section>
 	<!-- end hero -->
 
 	<!-- meta -->
-	<section class="meta">
+	<section class="meta" id="meta">
 		<div class="container">
 			<h2 class="section-title">Метавселенная Roblox</h2>
 			<div class="section-wrapper">
@@ -33,8 +75,8 @@
 			<!-- <img class="meta-img-1 wow pulse" data-wow-delay="0.4s" src="img/meta-planet.svg" alt="" width="288" height="289"> -->
 			<img class="meta-img-1 wow pulse" data-wow-delay="0.2s" src="img/meta-planet-1.svg" alt="" width="315" height="315">
 			<img class="meta-img-2 wow fadeInDown" data-wow-delay="0.4s" src="img/meta-ship.svg" alt="" width="244" height="316">
-			<img class="meta-img-3 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s" src="img/meta-left-stars.svg" alt="" width="144" height="150">
-			<img class="meta-img-4 wow fadeIn" data-wow-delay="1.4s" data-wow-duration="2s" src="img/meta-right-stars.svg" alt="" width="180" height="184">
+			<img class="meta-img-3 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s"  data-wow-iteration="infinite" src="img/meta-left-stars.svg" alt="" width="144" height="150">
+			<img class="meta-img-4 wow fadeIn" data-wow-delay="1.4s" data-wow-duration="1.5s"  data-wow-iteration="infinite" src="img/meta-right-stars.svg" alt="" width="180" height="184">
 			<img class="meta-img-5" src="img/meta-bg.svg" alt="" width="593" height="428">
 			<img class="meta-img-6" src="img/meta-planet-mob.svg" alt="" width="33" height="125">
 		</div>
@@ -42,7 +84,7 @@
 	<!-- end meta -->
 
 	<!-- case -->
-	<section class="case">
+	<section class="case" id="case">
 		<div class="container">
 			<h2 class="section-title">Кейсы</h2>
 	
@@ -152,7 +194,7 @@
 	<!-- end case -->
 
 	<!-- directions -->
-	<section class="directions">
+	<section class="directions" id="directions">
 		<div class="container">
 			<h2 class="section-title">Направления</h2>
 	
@@ -283,7 +325,7 @@
 	<!-- end directions -->
 
 	<!-- about -->
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container">
 			<h2 class="section-title">О нас</h2>
 			<div class="section-wrapper">
@@ -294,8 +336,8 @@
 			</div>
 	
 			<img class="about-img-1 wow pulse" data-wow-delay="0.4s" src="img/about-sattelite.svg" alt="" width="383" height="389">
-			<img class="about-img-2 wow fadeIn" data-wow-delay="0.2" data-wow-duration="2s" src="img/about-left-stars.svg" alt="" width="104" height="208">
-			<img class="about-img-3 wow fadeIn" data-wow-delay="0.6s" data-wow-duration="2s" src="img/about-right-stars.svg" alt="" width="126" height="127">
+			<img class="about-img-2 wow fadeIn" data-wow-delay="0.2" data-wow-duration="2s" data-wow-iteration="infinite" src="img/about-left-stars.svg" alt="" width="104" height="208">
+			<img class="about-img-3 wow fadeIn" data-wow-delay="0.6s" data-wow-duration="1.5s" data-wow-iteration="infinite" src="img/about-right-stars.svg" alt="" width="126" height="127">
 		</div>
 	</section>
 	<!-- end about -->
@@ -328,10 +370,10 @@
 					</div>
 	
 					<ul class="footer__menu">
-						<li><a href="#">Метавселенная Roblox</a></li>
-						<li><a href="#">Кейсы</a></li>
-						<li><a href="#">Направления</a></li>
-						<li><a href="#">О нас</a></li>
+						<li><a href="#meta">Метавселенная Roblox</a></li>
+						<li><a href="#case">Кейсы</a></li>
+						<li><a href="#directions">Направления</a></li>
+						<li><a href="#about">О нас</a></li>
 					</ul>
 	
 				</div>
